@@ -154,10 +154,10 @@ custom_fields:
         - type: conditional
           conditions:
             - entity: binary_sensor.evolute_central_locking_engaged
-              state: 'on'
+              state: 'off'
           card:
             type: button
-            name: Открыть
+            name: Закрыть
             icon: mdi:lock-open-variant
             tap_action:
               action: call-service
@@ -165,10 +165,10 @@ custom_fields:
         - type: conditional
           conditions:
             - entity: binary_sensor.evolute_central_locking_engaged
-              state: 'off'
+              state: 'on'
           card:
             type: button
-            name: Закрыть
+            name: Открыть
             icon: mdi:lock
             tap_action:
               action: call-service
