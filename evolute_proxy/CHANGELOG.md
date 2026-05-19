@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.43
+
+- Lowered minimal `sensors_refresh_interval` in add-on schema from 30s to 5s.
+- Bumped add-on version to `1.0.43`.
+
 ## 1.0.42
 
 - Fixed `/sensors/all` preparation script fields exposure for payload variants where `preparation_script` exists only at the top level.
