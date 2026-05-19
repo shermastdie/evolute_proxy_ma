@@ -1,5 +1,5 @@
 name: Evolute Proxy
-version: "1.0.42"
+version: "1.0.43"
 slug: evolute_proxy
 description: Evolute telematics proxy API for Home Assistant
 url: "https://github.com/Tamahome-M/evolute_proxy"
@@ -34,6 +34,6 @@ schema:
   refresh_token: str
   timeout: int(5,300)
   refresh_interval: int(30,3600)
-  sensors_refresh_interval: int(30,3600)
+  sensors_refresh_interval: int(5,3600)
   json_sub: str
   debug: bool
