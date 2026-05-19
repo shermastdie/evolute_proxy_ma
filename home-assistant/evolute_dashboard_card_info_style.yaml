@@ -157,8 +157,8 @@ custom_fields:
               state: 'off'
           card:
             type: button
-            name: Закрыть
-            icon: mdi:lock-open-variant
+            name: Закрыт
+            icon: mdi:lock
             tap_action:
               action: call-service
               service: script.evolute_lock_open
@@ -168,8 +168,8 @@ custom_fields:
               state: 'on'
           card:
             type: button
-            name: Открыть
-            icon: mdi:lock
+            name: Открыт
+            icon: mdi:lock-open-variant
             tap_action:
               action: call-service
               service: script.evolute_lock_close
