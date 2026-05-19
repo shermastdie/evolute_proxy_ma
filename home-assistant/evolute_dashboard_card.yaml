@@ -5,6 +5,7 @@ cards:
     show_header_toggle: false
     entities:
       - binary_sensor.evolute_online
+      - binary_sensor.evolute_parked
       - binary_sensor.evolute_ready_status
       - binary_sensor.evolute_ignition_on
       - binary_sensor.evolute_climate_on

@@ -267,6 +267,12 @@
         device_class: light
         icon: mdi:car-light-high
 
+      - name: "Evolute Parked"
+        unique_id: evolute_parked
+        state: "{{ state_attr('sensor.evolute_raw_data', 'isParked') in [true, 'true', 'True', 1, '1'] }}"
+        device_class: occupancy
+        icon: mdi:car-brake-parking
+
       - name: "Evolute Climate On"
         unique_id: evolute_climate_on
         state: "{{ state_attr('sensor.evolute_raw_data', 'climateStatus') | int == 1 }}"
