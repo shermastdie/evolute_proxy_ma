@@ -1,9 +1,4 @@
-//ARG BUILD_FROM=ghcr.io/home-assistant/aarch64-base-python:3.12-alpine3.21
-
-ARG BASE_IMAGE=ghcr.io/home-assistant/base
-ARG BASE_VERSION=3.23
-ARG BUILD_FROM=${BASE_IMAGE}:${BASE_VERSION}
-
+ARG BUILD_FROM=ghcr.io/home-assistant/%%BUILD_ARCH%%-base-python:3.12-alpine3.21
 FROM ${BUILD_FROM}
 
 ENV LANG=C.UTF-8
