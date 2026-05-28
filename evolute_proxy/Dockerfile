@@ -1,4 +1,4 @@
-ARG BUILD_FROM=https://github.com/home-assistant/docker-base/blob/master/python/3.12
+ARG BUILD_FROM=ghcr.io/home-assistant/armhf-base-python:3.12-alpine3.21
 FROM ${BUILD_FROM}
 
 ENV LANG=C.UTF-8
